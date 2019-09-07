@@ -1,2 +1,2 @@
-# kottans-backend
-Repository for Kottan's backend course :)
+# kottans-backend 
+Happy to be with Kottans again :cupid:
