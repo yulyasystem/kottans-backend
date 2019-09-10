@@ -16,25 +16,13 @@ function add() {
 
 /* CHALLANGE @3*/
 const fs = require("fs");
-let count = 0;
+let counter = 0;
 
 let isRead = fs.readFileSync("./README.md");
 
-let str = isRead.toString().split();
+let str = isRead.toString().split(",");
 
-console.log(str);
-
-let i = 0;
-while (i < 15) {
-  [...str].forEach(symbol => {
-    if (symbol === " ") {
-      //   console.log("new line");
-    }
-  });
-  i++;
-}
-
-str.map(item => console.log(typeof item));
+console.log(str[0]);
 
 function countSpaces() {}
 /* CHALLANGE @3*/
