@@ -16,13 +16,12 @@ function add() {
 
 /* CHALLANGE @3*/
 const fs = require("fs");
-let counter = 0;
 
-let isRead = fs.readFileSync("./README.md");
+const path = process.argv[2];
+let buffer = fs.readFileSync(path);
+let str = buffer.toString().split("\n");
 
-let str = isRead.toString().split(",");
-
-console.log(str[0]);
+console.log(str.length - 1);
 
 function countSpaces() {}
 /* CHALLANGE @3*/
