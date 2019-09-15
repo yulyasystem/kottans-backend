@@ -15,13 +15,14 @@ function add() {
 /* CHALLANGE @2*/
 
 /* CHALLANGE @3*/
-const fs = require("fs");
 
-const path = process.argv[2];
-let buffer = fs.readFileSync(path);
-let str = buffer.toString().split("\n");
+function countNewLines() {
+  const fs = require("fs");
+  const path = process.argv[2];
+  let buffer = fs.readFileSync(path);
+  let str = buffer.toString().split("\n");
+  let numOfNewLines = str.length - 1;
+  console.log(numOfNewLines);
 
-console.log(str.length - 1);
-
-function countSpaces() {}
+}
 /* CHALLANGE @3*/
